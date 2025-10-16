@@ -33,7 +33,7 @@ function update(){
   const h = pad(t.getHours());
   const m = pad(t.getMinutes());
   const s = pad(t.getSeconds());
-  document.getElementById('now').textContent = `▶${y}/${mo}/${d} (${day}) ${h}:${m}:${s}`;
+  document.getElementById('now').textContent = `${y}/${mo}/${d}(${day}) ${h}:${m}:${s}`;
 }
 setInterval(update, 1000);
 update();
